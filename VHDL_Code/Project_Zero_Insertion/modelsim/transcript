@@ -1,0 +1,61 @@
+vsim -gui work.cic_tb
+# vsim -gui work.cic_tb 
+# Start time: 17:22:16 on Dec 08,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cic_tb(arch)
+# Loading work.cic(cic_arch)
+# Loading work.comb_section(comb_section_arch)
+# Loading work.comb_block(comb_block_arch)
+# Loading work.flipflop(flipflop_arch)
+# Loading work.zero_insertion(zero_insertion_arch)
+# Loading work.integrator_section(integrator_section_arch)
+# Loading work.integrator_block(integrator_block_arch)
+add wave -position insertpoint sim:/cic_tb/*
+run -all
+# Compile of cic_tb.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cic_tb(arch)
+run -continue
+# Compile of cic.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cic(cic_arch)
+run -all
+# Compile of cic_tb.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cic_tb(arch)
+run -all
+# Compile of cic.vhd was successful.
+# Compile of comb_block.vhd was successful.
+# Compile of comb_section.vhd was successful.
+# Compile of flipflop.vhd was successful.
+# Compile of integrator_block.vhd was successful.
+# Compile of integrator_section.vhd was successful.
+# Compile of zero_insertion.vhd was successful.
+# Compile of cic_tb.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cic_tb(arch)
+# Loading work.cic(cic_arch)
+# Loading work.comb_section(comb_section_arch)
+# Loading work.comb_block(comb_block_arch)
+# Loading work.flipflop(flipflop_arch)
+# Loading work.zero_insertion(zero_insertion_arch)
+# Loading work.integrator_section(integrator_section_arch)
+# Loading work.integrator_block(integrator_block_arch)
+run -all
+# ** Fatal: (vsim-3734) Index value 50 is out of range 0 to 49.
+#    Time: 6387500 ps  Iteration: 0  Process: /cic_tb/line__68 File: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd
+# Fatal error in Process line__68 at C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd line 78
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd 78 Process line__68
+# 
+# End time: 18:42:44 on Dec 08,2022, Elapsed time: 1:20:28
+# Errors: 1, Warnings: 1

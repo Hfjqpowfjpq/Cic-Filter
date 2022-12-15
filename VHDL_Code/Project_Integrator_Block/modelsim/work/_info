@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Block/modelsim
+Eflipflop
+Z0 w1669664723
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z4 dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/modelsim
+Z5 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/flipflop.vhd
+Z6 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/flipflop.vhd
+l0
+L6 1
+VmAL2kRoWDTC^SdKf2SFHF0
+!s100 6ROTEUKcWdW;[9PCl__Y61
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1670429215
+!i10b 1
+Z9 !s108 1670429214.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/flipflop.vhd|
+Z11 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/flipflop.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Aflipflop_arch
+R1
+R2
+R3
+DEx4 work 8 flipflop 0 22 mAL2kRoWDTC^SdKf2SFHF0
+!i122 0
+l23
+L21 17
+VY:OjEl5VYIl:OnZMgHU^F1
+!s100 >DVXXal[flT0V?0YdDUD<1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eintegrator_block
+Z14 w1669991564
+R1
+R2
+R3
+!i122 1
+R4
+Z15 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/integrator_block.vhd
+Z16 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/integrator_block.vhd
+l0
+L5 1
+VfZL[Q]4iAZY_:KAT[9S`H0
+!s100 HXE[W2]KLCIn<e?PO]YJ71
+R7
+32
+R8
+!i10b 1
+Z17 !s108 1670429215.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/integrator_block.vhd|
+Z19 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/src/integrator_block.vhd|
+!i113 1
+R12
+R13
+Aintegrator_block_arch
+R1
+R2
+R3
+DEx4 work 16 integrator_block 0 22 fZL[Q]4iAZY_:KAT[9S`H0
+!i122 1
+l38
+L20 38
+VacaSjM@;;]9`nHS5eE3O53
+!s100 7aA3Od3RYNAk=zInSamY]2
+R7
+32
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Eintegrator_block_tb
+Z20 w1670429596
+R1
+R2
+R3
+!i122 3
+R4
+Z21 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/tb/integrator_block_tb.vhd
+Z22 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/tb/integrator_block_tb.vhd
+l0
+L6 1
+V=`lnPI@>7@:X8ZDEL?b=53
+!s100 RO@7_:0?baHi^iYecP>dm2
+R7
+32
+Z23 !s110 1670429659
+!i10b 1
+Z24 !s108 1670429658.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/tb/integrator_block_tb.vhd|
+Z26 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/tb/integrator_block_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+Z27 DEx4 work 19 integrator_block_tb 0 22 =`lnPI@>7@:X8ZDEL?b=53
+!i122 3
+l37
+Z28 L11 59
+VWd5:aAkI`e;[z3Z^OBOBm3
+!s100 Lf?l_TzkF?91SNUV:icj?2
+R7
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13

@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/modelsim
+Eflipflop
+Z0 w1669664723
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+Z4 dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/modelsim
+Z5 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/src/flipflop.vhd
+Z6 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/src/flipflop.vhd
+l0
+L6 1
+VmAL2kRoWDTC^SdKf2SFHF0
+!s100 6ROTEUKcWdW;[9PCl__Y61
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1670404419
+!i10b 1
+Z9 !s108 1670404419.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/src/flipflop.vhd|
+Z11 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/src/flipflop.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Aflipflop_arch
+R1
+R2
+R3
+DEx4 work 8 flipflop 0 22 mAL2kRoWDTC^SdKf2SFHF0
+!i122 12
+l23
+L21 17
+VY:OjEl5VYIl:OnZMgHU^F1
+!s100 >DVXXal[flT0V?0YdDUD<1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eflipflop_tb
+Z14 w1670404407
+R1
+R2
+R3
+!i122 13
+R4
+Z15 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/tb/flipfop_tb.vhd
+Z16 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/tb/flipfop_tb.vhd
+l0
+L6 1
+VIW8RCGzn^FQPbRAAPjVlk3
+!s100 Oz0DlAg1?BJjb^edEdEZ>2
+R7
+32
+Z17 !s110 1670404420
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/tb/flipfop_tb.vhd|
+Z19 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/tb/flipfop_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+Z20 DEx4 work 11 flipflop_tb 0 22 IW8RCGzn^FQPbRAAPjVlk3
+!i122 13
+l39
+Z21 L11 62
+VK7YJY[7YJ33ileS[UCU1m1
+!s100 e<[jdHUNB:F8>4J^C:XFj2
+R7
+32
+R17
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13

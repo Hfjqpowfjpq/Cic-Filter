@@ -1,0 +1,105 @@
+# Compile of flipflop.vhd was successful.
+# Compile of integrator_block.vhd was successful.
+# Compile of integrator_block_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.integrator_block_tb
+# vsim -gui work.integrator_block_tb 
+# Start time: 17:07:04 on Dec 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.integrator_block_tb(arch)
+# Loading work.integrator_block(integrator_block_arch)
+# Loading work.flipflop(flipflop_arch)
+add wave -position insertpoint sim:/integrator_block_tb/*
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# Compile of integrator_block_tb.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.integrator_block_tb(arch)
+run -all
+# End time: 17:45:25 on Dec 07,2022, Elapsed time: 0:38:21
+# Errors: 0, Warnings: 1
+# Closing project C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/modelsim/integrator_block_testbench.mpf
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project comb_section_testbench
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project comb_section_testbench
+# Compile of comb_block.vhd was successful.
+# Compile of comb_section.vhd was successful.
+# Compile of flipflop.vhd was successful.
+# Compile of comb_section_tb.vhd failed with 3 errors.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of comb_section_tb.vhd failed with 1 errors.
+# Compile of comb_section_tb.vhd was successful.
+vsim -gui work.comb_section_tb
+# vsim -gui work.comb_section_tb 
+# Start time: 17:52:33 on Dec 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.comb_section_tb(arch)
+# Loading work.comb_section(comb_section_arch)
+# ** Fatal: (vsim-3348) Port length (7) does not match actual length (8) for port "/comb_section_tb/comb_section_map/output".
+#    Time: 0 ps  Iteration: 0  Instance: /comb_section_tb/comb_section_map File: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_section.vhd Line: 17
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:52:33 on Dec 07,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 10
+# Compile of comb_block.vhd was successful.
+# Compile of comb_section.vhd was successful.
+# Compile of flipflop.vhd was successful.
+# Compile of comb_section_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.comb_section_tb
+# vsim -gui work.comb_section_tb 
+# Start time: 17:53:36 on Dec 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.comb_section_tb(arch)
+# Loading work.comb_section(comb_section_arch)
+# Loading work.comb_block(comb_block_arch)
+# Loading work.flipflop(flipflop_arch)
+add wave -position insertpoint sim:/comb_section_tb/*
+run -all
+# Compile of comb_section_tb.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.comb_section_tb(arch)
+run -all
+-quit -sim
+# invalid command name "-quit"
+quit -sim
+# End time: 18:59:11 on Dec 07,2022, Elapsed time: 1:05:35
+# Errors: 0, Warnings: 1
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project integrator_section_testbench
+# Compile of flipflop.vhd was successful.
+# Compile of integrator_block.vhd was successful.
+# Compile of integrator_section.vhd was successful.
+# Compile of integrator_section_tb.vhd failed with 6 errors.
+# 4 compiles, 1 failed with 6 errors.
+# Compile of integrator_section_tb.vhd was successful.
+vsim -gui work.integrator_section_tb
+# vsim -gui work.integrator_section_tb 
+# Start time: 19:03:39 on Dec 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.integrator_section_tb(arch)
+# Loading work.integrator_section(integrator_section_arch)
+# Loading work.integrator_block(integrator_block_arch)
+# Loading work.flipflop(flipflop_arch)
+add wave -position insertpoint sim:/integrator_section_tb/*
+run -all
+restart
+# End time: 10:36:36 on Dec 08,2022, Elapsed time: 15:32:57
+# Errors: 0, Warnings: 7

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec 11 11:46:07 2022
+# Process ID: 16140
+# Current directory: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/impl_1
+# Command line: vivado.exe -log cic_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cic_wrapper.tcl -notrace
+# Log file: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/impl_1/cic_wrapper.vdi
+# Journal file: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cic_wrapper.tcl -notrace

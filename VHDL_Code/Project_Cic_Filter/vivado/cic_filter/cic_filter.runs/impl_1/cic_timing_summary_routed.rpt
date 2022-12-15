@@ -1,0 +1,1671 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  9 12:57:25 2022
+| Host         : DESKTOP-43K3FLR running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file cic_timing_summary_routed.rpt -pb cic_timing_summary_routed.pb -rpx cic_timing_summary_routed.rpx -warn_on_violation
+| Design       : cic
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (18)
+6. checking no_output_delay (16)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (18)
+-------------------------------
+ There are 18 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (16)
+--------------------------------
+ There are 16 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+   5652.246        0.000                      0                  242        0.208        0.000                      0                  242     2833.500        0.000                       0                   188  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock     Waveform(ns)           Period(ns)      Frequency(MHz)
+-----     ------------           ----------      --------------
+clk_test  {0.000 2834.000}       5668.000        0.176           
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_test         5652.246        0.000                      0                  242        0.208        0.000                      0                  242     2833.500        0.000                       0                   188  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_test
+  To Clock:  clk_test
+
+Setup :            0  Failing Endpoints,  Worst Slack     5652.246ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.208ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack     2833.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             5652.246ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.769ns  (logic 8.263ns (52.399%)  route 7.506ns (47.601%))
+  Logic Levels:           21  (CARRY4=13 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.514 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    12.514    integrator_section_map/integrator_block_map_1/data_flow_carry__1_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348    12.862 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2/O[1]
+                         net (fo=3, routed)           0.830    13.692    integrator_section_map/integrator_block_map_1/D[13]
+    SLICE_X1Y51          LUT2 (Prop_lut2_I0_O)        0.303    13.995 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2_i_3__0/O
+                         net (fo=1, routed)           0.000    13.995    integrator_section_map/integrator_block_map_2/outputData_reg[15]_0[1]
+    SLICE_X1Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    14.545 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    14.545    integrator_section_map/integrator_block_map_2/data_flow_carry__2_n_0
+    SLICE_X1Y52          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.780 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3/O[0]
+                         net (fo=3, routed)           0.814    15.593    integrator_section_map/integrator_block_map_2/D[16]
+    SLICE_X0Y53          LUT2 (Prop_lut2_I0_O)        0.299    15.892 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3_i_4__1/O
+                         net (fo=1, routed)           0.000    15.892    integrator_section_map/integrator_block_map_3/outputData_reg[19][0]
+    SLICE_X0Y53          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    16.405 r  integrator_section_map/integrator_block_map_3/data_flow_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    16.405    integrator_section_map/integrator_block_map_3/data_flow_carry__3_n_0
+    SLICE_X0Y54          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    16.742 r  integrator_section_map/integrator_block_map_3/data_flow_carry__4/O[1]
+                         net (fo=1, routed)           0.000    16.742    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[21]
+    SLICE_X0Y54          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y54          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y54          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.742    
+  -------------------------------------------------------------------
+                         slack                               5652.246    
+
+Slack (MET) :             5652.351ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.664ns  (logic 8.158ns (52.080%)  route 7.506ns (47.920%))
+  Logic Levels:           21  (CARRY4=13 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.514 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    12.514    integrator_section_map/integrator_block_map_1/data_flow_carry__1_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348    12.862 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2/O[1]
+                         net (fo=3, routed)           0.830    13.692    integrator_section_map/integrator_block_map_1/D[13]
+    SLICE_X1Y51          LUT2 (Prop_lut2_I0_O)        0.303    13.995 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2_i_3__0/O
+                         net (fo=1, routed)           0.000    13.995    integrator_section_map/integrator_block_map_2/outputData_reg[15]_0[1]
+    SLICE_X1Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    14.545 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    14.545    integrator_section_map/integrator_block_map_2/data_flow_carry__2_n_0
+    SLICE_X1Y52          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.780 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3/O[0]
+                         net (fo=3, routed)           0.814    15.593    integrator_section_map/integrator_block_map_2/D[16]
+    SLICE_X0Y53          LUT2 (Prop_lut2_I0_O)        0.299    15.892 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3_i_4__1/O
+                         net (fo=1, routed)           0.000    15.892    integrator_section_map/integrator_block_map_3/outputData_reg[19][0]
+    SLICE_X0Y53          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    16.405 r  integrator_section_map/integrator_block_map_3/data_flow_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    16.405    integrator_section_map/integrator_block_map_3/data_flow_carry__3_n_0
+    SLICE_X0Y54          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    16.637 r  integrator_section_map/integrator_block_map_3/data_flow_carry__4/O[0]
+                         net (fo=1, routed)           0.000    16.637    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[20]
+    SLICE_X0Y54          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y54          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[20]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y54          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[20]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.637    
+  -------------------------------------------------------------------
+                         slack                               5652.351    
+
+Slack (MET) :             5652.488ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.527ns  (logic 8.021ns (51.657%)  route 7.506ns (48.343%))
+  Logic Levels:           20  (CARRY4=12 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.514 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    12.514    integrator_section_map/integrator_block_map_1/data_flow_carry__1_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348    12.862 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2/O[1]
+                         net (fo=3, routed)           0.830    13.692    integrator_section_map/integrator_block_map_1/D[13]
+    SLICE_X1Y51          LUT2 (Prop_lut2_I0_O)        0.303    13.995 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2_i_3__0/O
+                         net (fo=1, routed)           0.000    13.995    integrator_section_map/integrator_block_map_2/outputData_reg[15]_0[1]
+    SLICE_X1Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    14.545 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    14.545    integrator_section_map/integrator_block_map_2/data_flow_carry__2_n_0
+    SLICE_X1Y52          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.780 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3/O[0]
+                         net (fo=3, routed)           0.814    15.593    integrator_section_map/integrator_block_map_2/D[16]
+    SLICE_X0Y53          LUT2 (Prop_lut2_I0_O)        0.299    15.892 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3_i_4__1/O
+                         net (fo=1, routed)           0.000    15.892    integrator_section_map/integrator_block_map_3/outputData_reg[19][0]
+    SLICE_X0Y53          CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.608    16.500 r  integrator_section_map/integrator_block_map_3/data_flow_carry__3/O[3]
+                         net (fo=1, routed)           0.000    16.500    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[19]
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[19]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y53          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[19]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.500    
+  -------------------------------------------------------------------
+                         slack                               5652.488    
+
+Slack (MET) :             5652.552ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.463ns  (logic 7.957ns (51.457%)  route 7.506ns (48.543%))
+  Logic Levels:           20  (CARRY4=12 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.514 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    12.514    integrator_section_map/integrator_block_map_1/data_flow_carry__1_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348    12.862 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2/O[1]
+                         net (fo=3, routed)           0.830    13.692    integrator_section_map/integrator_block_map_1/D[13]
+    SLICE_X1Y51          LUT2 (Prop_lut2_I0_O)        0.303    13.995 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2_i_3__0/O
+                         net (fo=1, routed)           0.000    13.995    integrator_section_map/integrator_block_map_2/outputData_reg[15]_0[1]
+    SLICE_X1Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    14.545 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    14.545    integrator_section_map/integrator_block_map_2/data_flow_carry__2_n_0
+    SLICE_X1Y52          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.780 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3/O[0]
+                         net (fo=3, routed)           0.814    15.593    integrator_section_map/integrator_block_map_2/D[16]
+    SLICE_X0Y53          LUT2 (Prop_lut2_I0_O)        0.299    15.892 r  integrator_section_map/integrator_block_map_2/data_flow_carry__3_i_4__1/O
+                         net (fo=1, routed)           0.000    15.892    integrator_section_map/integrator_block_map_3/outputData_reg[19][0]
+    SLICE_X0Y53          CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.544    16.436 r  integrator_section_map/integrator_block_map_3/data_flow_carry__3/O[2]
+                         net (fo=1, routed)           0.000    16.436    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[18]
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[18]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y53          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[18]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.436    
+  -------------------------------------------------------------------
+                         slack                               5652.552    
+
+Slack (MET) :             5652.569ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.446ns  (logic 7.928ns (51.327%)  route 7.518ns (48.673%))
+  Logic Levels:           20  (CARRY4=12 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.514 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    12.514    integrator_section_map/integrator_block_map_1/data_flow_carry__1_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348    12.862 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2/O[1]
+                         net (fo=3, routed)           0.830    13.692    integrator_section_map/integrator_block_map_1/D[13]
+    SLICE_X1Y51          LUT2 (Prop_lut2_I0_O)        0.303    13.995 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2_i_3__0/O
+                         net (fo=1, routed)           0.000    13.995    integrator_section_map/integrator_block_map_2/outputData_reg[15]_0[1]
+    SLICE_X1Y51          CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    14.575 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/O[2]
+                         net (fo=3, routed)           0.825    15.400    integrator_section_map/integrator_block_map_2/D[14]
+    SLICE_X0Y52          LUT2 (Prop_lut2_I0_O)        0.302    15.702 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2_i_2__1/O
+                         net (fo=1, routed)           0.000    15.702    integrator_section_map/integrator_block_map_3/outputData_reg[15][2]
+    SLICE_X0Y52          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.082 r  integrator_section_map/integrator_block_map_3/data_flow_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    16.082    integrator_section_map/integrator_block_map_3/data_flow_carry__2_n_0
+    SLICE_X0Y53          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    16.419 r  integrator_section_map/integrator_block_map_3/data_flow_carry__3/O[1]
+                         net (fo=1, routed)           0.000    16.419    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[17]
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[17]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y53          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[17]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.419    
+  -------------------------------------------------------------------
+                         slack                               5652.569    
+
+Slack (MET) :             5652.674ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.341ns  (logic 7.823ns (50.994%)  route 7.518ns (49.006%))
+  Logic Levels:           20  (CARRY4=12 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.514 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    12.514    integrator_section_map/integrator_block_map_1/data_flow_carry__1_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348    12.862 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2/O[1]
+                         net (fo=3, routed)           0.830    13.692    integrator_section_map/integrator_block_map_1/D[13]
+    SLICE_X1Y51          LUT2 (Prop_lut2_I0_O)        0.303    13.995 r  integrator_section_map/integrator_block_map_1/data_flow_carry__2_i_3__0/O
+                         net (fo=1, routed)           0.000    13.995    integrator_section_map/integrator_block_map_2/outputData_reg[15]_0[1]
+    SLICE_X1Y51          CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    14.575 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/O[2]
+                         net (fo=3, routed)           0.825    15.400    integrator_section_map/integrator_block_map_2/D[14]
+    SLICE_X0Y52          LUT2 (Prop_lut2_I0_O)        0.302    15.702 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2_i_2__1/O
+                         net (fo=1, routed)           0.000    15.702    integrator_section_map/integrator_block_map_3/outputData_reg[15][2]
+    SLICE_X0Y52          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.082 r  integrator_section_map/integrator_block_map_3/data_flow_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    16.082    integrator_section_map/integrator_block_map_3/data_flow_carry__2_n_0
+    SLICE_X0Y53          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    16.314 r  integrator_section_map/integrator_block_map_3/data_flow_carry__3/O[0]
+                         net (fo=1, routed)           0.000    16.314    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[16]
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y53          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[16]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y53          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[16]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.314    
+  -------------------------------------------------------------------
+                         slack                               5652.674    
+
+Slack (MET) :             5652.888ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.127ns  (logic 7.617ns (50.354%)  route 7.510ns (49.646%))
+  Logic Levels:           19  (CARRY4=11 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640    12.604 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/O[3]
+                         net (fo=3, routed)           0.834    13.437    integrator_section_map/integrator_block_map_1/D[11]
+    SLICE_X1Y50          LUT2 (Prop_lut2_I0_O)        0.306    13.743 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1_i_1__0/O
+                         net (fo=1, routed)           0.000    13.743    integrator_section_map/integrator_block_map_2/outputData_reg[11]_0[3]
+    SLICE_X1Y50          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    14.144 r  integrator_section_map/integrator_block_map_2/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    14.144    integrator_section_map/integrator_block_map_2/data_flow_carry__1_n_0
+    SLICE_X1Y51          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.379 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/O[0]
+                         net (fo=3, routed)           0.814    15.193    integrator_section_map/integrator_block_map_2/D[12]
+    SLICE_X0Y52          LUT2 (Prop_lut2_I0_O)        0.299    15.492 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000    15.492    integrator_section_map/integrator_block_map_3/outputData_reg[15][0]
+    SLICE_X0Y52          CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.608    16.100 r  integrator_section_map/integrator_block_map_3/data_flow_carry__2/O[3]
+                         net (fo=1, routed)           0.000    16.100    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[15]
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[15]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y52          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[15]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.100    
+  -------------------------------------------------------------------
+                         slack                               5652.888    
+
+Slack (MET) :             5652.952ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        15.063ns  (logic 7.553ns (50.143%)  route 7.510ns (49.857%))
+  Logic Levels:           19  (CARRY4=11 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640    12.604 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/O[3]
+                         net (fo=3, routed)           0.834    13.437    integrator_section_map/integrator_block_map_1/D[11]
+    SLICE_X1Y50          LUT2 (Prop_lut2_I0_O)        0.306    13.743 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1_i_1__0/O
+                         net (fo=1, routed)           0.000    13.743    integrator_section_map/integrator_block_map_2/outputData_reg[11]_0[3]
+    SLICE_X1Y50          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    14.144 r  integrator_section_map/integrator_block_map_2/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    14.144    integrator_section_map/integrator_block_map_2/data_flow_carry__1_n_0
+    SLICE_X1Y51          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.379 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/O[0]
+                         net (fo=3, routed)           0.814    15.193    integrator_section_map/integrator_block_map_2/D[12]
+    SLICE_X0Y52          LUT2 (Prop_lut2_I0_O)        0.299    15.492 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000    15.492    integrator_section_map/integrator_block_map_3/outputData_reg[15][0]
+    SLICE_X0Y52          CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.544    16.036 r  integrator_section_map/integrator_block_map_3/data_flow_carry__2/O[2]
+                         net (fo=1, routed)           0.000    16.036    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[14]
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[14]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y52          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[14]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -16.036    
+  -------------------------------------------------------------------
+                         slack                               5652.952    
+
+Slack (MET) :             5653.069ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        14.946ns  (logic 7.436ns (49.752%)  route 7.510ns (50.248%))
+  Logic Levels:           19  (CARRY4=11 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640    12.604 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/O[3]
+                         net (fo=3, routed)           0.834    13.437    integrator_section_map/integrator_block_map_1/D[11]
+    SLICE_X1Y50          LUT2 (Prop_lut2_I0_O)        0.306    13.743 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1_i_1__0/O
+                         net (fo=1, routed)           0.000    13.743    integrator_section_map/integrator_block_map_2/outputData_reg[11]_0[3]
+    SLICE_X1Y50          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    14.144 r  integrator_section_map/integrator_block_map_2/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    14.144    integrator_section_map/integrator_block_map_2/data_flow_carry__1_n_0
+    SLICE_X1Y51          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.379 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/O[0]
+                         net (fo=3, routed)           0.814    15.193    integrator_section_map/integrator_block_map_2/D[12]
+    SLICE_X0Y52          LUT2 (Prop_lut2_I0_O)        0.299    15.492 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000    15.492    integrator_section_map/integrator_block_map_3/outputData_reg[15][0]
+    SLICE_X0Y52          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.427    15.919 r  integrator_section_map/integrator_block_map_3/data_flow_carry__2/O[1]
+                         net (fo=1, routed)           0.000    15.919    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[13]
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[13]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y52          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[13]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -15.919    
+  -------------------------------------------------------------------
+                         slack                               5653.069    
+
+Slack (MET) :             5653.244ns  (required time - arrival time)
+  Source:                 comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5668.000ns  (clk_test rise@5668.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        14.771ns  (logic 7.261ns (49.157%)  route 7.510ns (50.843%))
+  Logic Levels:           19  (CARRY4=11 LUT2=7 LUT3=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 5668.924 - 5668.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.973     0.973    comb_section_map/comb_block_0_map/flipflop_map/clk
+    SLICE_X7Y48          FDRE                                         r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     1.429 r  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/Q
+                         net (fo=1, routed)           0.638     2.067    comb_section_map/comb_block_0_map/flipflop_map/outputData[1]
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.124     2.191 r  comb_section_map/comb_block_0_map/flipflop_map/output_carry_i_3/O
+                         net (fo=1, routed)           0.000     2.191    comb_section_map/comb_block_0_map/flipflop_map_n_8
+    SLICE_X7Y49          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     2.831 r  comb_section_map/comb_block_0_map/output_carry/O[3]
+                         net (fo=3, routed)           0.976     3.807    comb_section_map/comb_block_0_map/D[3]
+    SLICE_X8Y49          LUT2 (Prop_lut2_I0_O)        0.306     4.113 r  comb_section_map/comb_block_0_map/output_carry_i_1__0/O
+                         net (fo=1, routed)           0.000     4.113    comb_section_map/comb_block_1_map/S[3]
+    SLICE_X8Y49          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.255     4.368 r  comb_section_map/comb_block_1_map/output_carry/O[3]
+                         net (fo=3, routed)           1.124     5.492    comb_section_map/comb_block_1_map/D[3]
+    SLICE_X9Y49          LUT2 (Prop_lut2_I0_O)        0.307     5.799 r  comb_section_map/comb_block_1_map/output_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     5.799    comb_section_map/comb_block_2_map/outputData_reg[3][3]
+    SLICE_X9Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.200 r  comb_section_map/comb_block_2_map/output_carry/CO[3]
+                         net (fo=1, routed)           0.001     6.201    comb_section_map/comb_block_2_map/output_carry_n_0
+    SLICE_X9Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     6.549 r  comb_section_map/comb_block_2_map/output_carry__0/O[1]
+                         net (fo=3, routed)           0.956     7.505    comb_section_map/comb_block_2_map/D[5]
+    SLICE_X10Y50         LUT2 (Prop_lut2_I0_O)        0.303     7.808 r  comb_section_map/comb_block_2_map/output_carry__0_i_3__2/O
+                         net (fo=1, routed)           0.000     7.808    comb_section_map/comb_block_3_map/data_flow_carry__0_i_4__2_0[1]
+    SLICE_X10Y50         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.451 r  comb_section_map/comb_block_3_map/output_carry__0/O[3]
+                         net (fo=2, routed)           1.354     9.804    comb_section_map/comb_block_3_map/output_carry__0_n_4
+    SLICE_X5Y49          LUT3 (Prop_lut3_I0_O)        0.307    10.111 r  comb_section_map/comb_block_3_map/data_flow_carry__0_i_1__2/O
+                         net (fo=1, routed)           0.000    10.111    integrator_section_map/integrator_block_map_0/outputData_reg[7]_1[3]
+    SLICE_X5Y49          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    10.512 r  integrator_section_map/integrator_block_map_0/data_flow_carry__0/CO[3]
+                         net (fo=1, routed)           0.001    10.513    integrator_section_map/integrator_block_map_0/data_flow_carry__0_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.847 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1/O[1]
+                         net (fo=2, routed)           0.814    11.661    integrator_section_map/integrator_block_map_0/outputData_reg[11][1]
+    SLICE_X3Y50          LUT2 (Prop_lut2_I0_O)        0.303    11.964 r  integrator_section_map/integrator_block_map_0/data_flow_carry__1_i_3/O
+                         net (fo=1, routed)           0.000    11.964    integrator_section_map/integrator_block_map_1/outputData_reg[11]_1[1]
+    SLICE_X3Y50          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640    12.604 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1/O[3]
+                         net (fo=3, routed)           0.834    13.437    integrator_section_map/integrator_block_map_1/D[11]
+    SLICE_X1Y50          LUT2 (Prop_lut2_I0_O)        0.306    13.743 r  integrator_section_map/integrator_block_map_1/data_flow_carry__1_i_1__0/O
+                         net (fo=1, routed)           0.000    13.743    integrator_section_map/integrator_block_map_2/outputData_reg[11]_0[3]
+    SLICE_X1Y50          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    14.144 r  integrator_section_map/integrator_block_map_2/data_flow_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    14.144    integrator_section_map/integrator_block_map_2/data_flow_carry__1_n_0
+    SLICE_X1Y51          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235    14.379 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2/O[0]
+                         net (fo=3, routed)           0.814    15.193    integrator_section_map/integrator_block_map_2/D[12]
+    SLICE_X0Y52          LUT2 (Prop_lut2_I0_O)        0.299    15.492 r  integrator_section_map/integrator_block_map_2/data_flow_carry__2_i_4__1/O
+                         net (fo=1, routed)           0.000    15.492    integrator_section_map/integrator_block_map_3/outputData_reg[15][0]
+    SLICE_X0Y52          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252    15.744 r  integrator_section_map/integrator_block_map_3/data_flow_carry__2/O[0]
+                         net (fo=1, routed)           0.000    15.744    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[21]_0[12]
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                   5668.000  5668.000 r  
+                                                      0.000  5668.000 r  clk (IN)
+                         net (fo=187, unset)          0.924  5668.924    integrator_section_map/integrator_block_map_3/flipflop_map/clk
+    SLICE_X0Y52          FDRE                                         r  integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[12]/C
+                         clock pessimism              0.000  5668.924    
+                         clock uncertainty           -0.035  5668.889    
+    SLICE_X0Y52          FDRE (Setup_fdre_C_D)        0.099  5668.988    integrator_section_map/integrator_block_map_3/flipflop_map/outputData_reg[12]
+  -------------------------------------------------------------------
+                         required time                       5668.988    
+                         arrival time                         -15.744    
+  -------------------------------------------------------------------
+                         slack                               5653.244    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.208ns  (arrival time - required time)
+  Source:                 comb_section_map/comb_block_1_map/flipflop_map/outputData_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.359ns  (logic 0.250ns (69.612%)  route 0.109ns (30.388%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    comb_section_map/comb_block_1_map/flipflop_map/clk
+    SLICE_X7Y51          FDRE                                         r  comb_section_map/comb_block_1_map/flipflop_map/outputData_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y51          FDRE (Prop_fdre_C_Q)         0.141     0.551 r  comb_section_map/comb_block_1_map/flipflop_map/outputData_reg[11]/Q
+                         net (fo=1, routed)           0.109     0.660    comb_section_map/comb_block_0_map/Q[11]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.045     0.705 r  comb_section_map/comb_block_0_map/output_carry__1_i_1__0/O
+                         net (fo=1, routed)           0.000     0.705    comb_section_map/comb_block_1_map/outputData_reg[11]_0[3]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.064     0.769 r  comb_section_map/comb_block_1_map/output_carry__1/O[3]
+                         net (fo=3, routed)           0.000     0.769    comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[17]_1[11]
+    SLICE_X8Y51          FDRE                                         r  comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    comb_section_map/comb_block_2_map/flipflop_map/clk
+    SLICE_X8Y51          FDRE                                         r  comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[11]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X8Y51          FDRE (Hold_fdre_C_D)         0.130     0.562    comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -0.562    
+                         arrival time                           0.769    
+  -------------------------------------------------------------------
+                         slack                                  0.208    
+
+Slack (MET) :             0.208ns  (arrival time - required time)
+  Source:                 comb_section_map/comb_block_1_map/flipflop_map/outputData_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.359ns  (logic 0.250ns (69.612%)  route 0.109ns (30.388%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    comb_section_map/comb_block_1_map/flipflop_map/clk
+    SLICE_X7Y50          FDRE                                         r  comb_section_map/comb_block_1_map/flipflop_map/outputData_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y50          FDRE (Prop_fdre_C_Q)         0.141     0.551 r  comb_section_map/comb_block_1_map/flipflop_map/outputData_reg[7]/Q
+                         net (fo=1, routed)           0.109     0.660    comb_section_map/comb_block_0_map/Q[7]
+    SLICE_X8Y50          LUT2 (Prop_lut2_I1_O)        0.045     0.705 r  comb_section_map/comb_block_0_map/output_carry__0_i_1__0/O
+                         net (fo=1, routed)           0.000     0.705    comb_section_map/comb_block_1_map/outputData_reg[7]_0[3]
+    SLICE_X8Y50          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.064     0.769 r  comb_section_map/comb_block_1_map/output_carry__0/O[3]
+                         net (fo=3, routed)           0.000     0.769    comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[17]_1[7]
+    SLICE_X8Y50          FDRE                                         r  comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    comb_section_map/comb_block_2_map/flipflop_map/clk
+    SLICE_X8Y50          FDRE                                         r  comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[7]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X8Y50          FDRE (Hold_fdre_C_D)         0.130     0.562    comb_section_map/comb_block_2_map/flipflop_map/outputData_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.562    
+                         arrival time                           0.769    
+  -------------------------------------------------------------------
+                         slack                                  0.208    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y50          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y50          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[10]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[10]
+    SLICE_X6Y50          CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__1/O[3]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[11]_0[3]
+    SLICE_X6Y50          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y50          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[11]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y50          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y51          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y51          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[12]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[12]
+    SLICE_X6Y51          CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__2/O[1]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[15]_0[1]
+    SLICE_X6Y51          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y51          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[13]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y51          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y51          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y51          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[14]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[14]
+    SLICE_X6Y51          CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__2/O[3]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[15]_0[3]
+    SLICE_X6Y51          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y51          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[15]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y51          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y52          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y52          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[16]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[16]
+    SLICE_X6Y52          CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__3/O[1]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[19]_0[1]
+    SLICE_X6Y52          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y52          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[17]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y52          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[17]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y52          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y52          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[18]/Q
+                         net (fo=5, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[18]
+    SLICE_X6Y52          CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__3/O[3]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[19]_0[3]
+    SLICE_X6Y52          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y52          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[19]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y52          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[19]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y48          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y48          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[2]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[2]
+    SLICE_X6Y48          CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry/O[3]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/O[2]
+    SLICE_X6Y48          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y48          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[3]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y48          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y49          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y49          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[4]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[4]
+    SLICE_X6Y49          CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__0/O[1]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[7]_0[1]
+    SLICE_X6Y49          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y49          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[5]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y49          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Destination:            integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_test  {rise@0.000ns fall@2834.000ns period=5668.000ns})
+  Path Group:             clk_test
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_test rise@0.000ns - clk_test rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.293ns (78.721%)  route 0.079ns (21.279%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.022ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.432ns
+    Source Clock Delay      (SCD):    0.410ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.410     0.410    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y49          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y49          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[6]/Q
+                         net (fo=4, routed)           0.079     0.653    integrator_section_map/integrator_block_map_0/outputData_reg[6]
+    SLICE_X6Y49          CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.129     0.782 r  integrator_section_map/integrator_block_map_0/data_flow__0_carry__0/O[3]
+                         net (fo=1, routed)           0.000     0.782    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[7]_0[3]
+    SLICE_X6Y49          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_test rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=187, unset)          0.432     0.432    integrator_section_map/integrator_block_map_0/flipflop_map/clk
+    SLICE_X6Y49          FDRE                                         r  integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[7]/C
+                         clock pessimism              0.000     0.432    
+    SLICE_X6Y49          FDRE (Hold_fdre_C_D)         0.134     0.566    integrator_section_map/integrator_block_map_0/flipflop_map/outputData_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.566    
+                         arrival time                           0.782    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_test
+Waveform(ns):       { 0.000 2834.000 }
+Period(ns):         5668.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location     Pin
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         5668.000    5667.000   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[3]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[10]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[11]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[12]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[13]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[14]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[15]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[1]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[2]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y48  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X7Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[12]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[12]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[13]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         2834.000    2833.500   SLICE_X6Y53  comb_section_map/comb_block_0_map/flipflop_map/outputData_reg[13]/C
+
+
+

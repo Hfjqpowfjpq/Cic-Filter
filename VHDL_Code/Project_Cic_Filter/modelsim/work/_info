@@ -1,0 +1,355 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Ecic
+Z0 w1670517082
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z4 dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/modelsim
+Z5 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/cic.vhd
+Z6 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/cic.vhd
+l0
+L5 1
+VmLMRQY1`FDneeFh^6K^HT0
+!s100 bzB=iDJ>XPT=cdLM?F[U32
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1670520643
+!i10b 1
+Z9 !s108 1670520643.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/cic.vhd|
+Z11 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/cic.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acic_arch
+R1
+R2
+R3
+DEx4 work 3 cic 0 22 mLMRQY1`FDneeFh^6K^HT0
+!i122 11
+l75
+L22 119
+V3FTVZO6S1CidX=EHa<5k01
+!s100 ?I6<milH4b3imKPRf5Zb[1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecic_tb
+Z14 w1670520636
+R1
+R2
+R3
+!i122 18
+R4
+Z15 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd
+Z16 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd
+l0
+L6 1
+V3;CNo>RBfG7@KY[7H@zn:0
+!s100 N5ad;E^cPBGe[BjJ[11k13
+R7
+32
+Z17 !s110 1670520645
+!i10b 1
+Z18 !s108 1670520644.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd|
+Z20 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/tb/cic_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+Z21 DEx4 work 6 cic_tb 0 22 3;CNo>RBfG7@KY[7H@zn:0
+!i122 18
+l48
+L9 85
+ViA[Ma:Z4U6zf@PBFkQalT2
+!s100 3n^0cIiY1@=D4Th2L8W;c2
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ecomb_block
+Z22 w1669727535
+R1
+R2
+R3
+!i122 12
+R4
+Z23 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_block.vhd
+Z24 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_block.vhd
+l0
+L5 1
+VX@64fKSgmVZ]ehf6hKz5H0
+!s100 ?6LPZi4TijGiO28WhU[cn3
+R7
+32
+R8
+!i10b 1
+R9
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_block.vhd|
+Z26 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_block.vhd|
+!i113 1
+R12
+R13
+Acomb_block_arch
+R1
+R2
+R3
+DEx4 work 10 comb_block 0 22 X@64fKSgmVZ]ehf6hKz5H0
+!i122 12
+l40
+L21 38
+VAmV^^G[KLFX<=VUT6l[8V2
+!s100 EkXcQWhQ:IZHfFV[P?m9=3
+R7
+32
+R8
+!i10b 1
+R9
+R25
+R26
+!i113 1
+R12
+R13
+Ecomb_section
+Z27 w1670322155
+R1
+R2
+R3
+!i122 13
+R4
+Z28 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_section.vhd
+Z29 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_section.vhd
+l0
+L5 1
+Vmo6MM7L^W6G^F7>AKAaSH2
+!s100 @>^hk1`j0Shl6c:ohJzM=1
+R7
+32
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_section.vhd|
+Z31 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/comb_section.vhd|
+!i113 1
+R12
+R13
+Acomb_section_arch
+R1
+R2
+R3
+DEx4 work 12 comb_section 0 22 mo6MM7L^W6G^F7>AKAaSH2
+!i122 13
+l45
+L22 77
+VKjTJEdb5Ejm;@Yc^n=MbU2
+!s100 `Fz=[7?J7C6d>o1UVIiB`0
+R7
+32
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Eflipflop
+Z32 w1669664723
+R1
+R2
+R3
+!i122 14
+R4
+Z33 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/flipflop.vhd
+Z34 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/flipflop.vhd
+l0
+L6 1
+VmAL2kRoWDTC^SdKf2SFHF0
+!s100 6ROTEUKcWdW;[9PCl__Y61
+R7
+32
+Z35 !s110 1670520644
+!i10b 1
+R18
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/flipflop.vhd|
+Z37 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/flipflop.vhd|
+!i113 1
+R12
+R13
+Aflipflop_arch
+R1
+R2
+R3
+DEx4 work 8 flipflop 0 22 mAL2kRoWDTC^SdKf2SFHF0
+!i122 14
+l23
+L21 17
+VY:OjEl5VYIl:OnZMgHU^F1
+!s100 >DVXXal[flT0V?0YdDUD<1
+R7
+32
+R35
+!i10b 1
+R18
+R36
+R37
+!i113 1
+R12
+R13
+Eintegrator_block
+Z38 w1669991564
+R1
+R2
+R3
+!i122 15
+R4
+Z39 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_block.vhd
+Z40 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_block.vhd
+l0
+L5 1
+VfZL[Q]4iAZY_:KAT[9S`H0
+!s100 HXE[W2]KLCIn<e?PO]YJ71
+R7
+32
+R35
+!i10b 1
+R18
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_block.vhd|
+Z42 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_block.vhd|
+!i113 1
+R12
+R13
+Aintegrator_block_arch
+R1
+R2
+R3
+DEx4 work 16 integrator_block 0 22 fZL[Q]4iAZY_:KAT[9S`H0
+!i122 15
+l38
+L20 38
+VacaSjM@;;]9`nHS5eE3O53
+!s100 7aA3Od3RYNAk=zInSamY]2
+R7
+32
+R35
+!i10b 1
+R18
+R41
+R42
+!i113 1
+R12
+R13
+Eintegrator_section
+Z43 w1670093918
+R1
+R2
+R3
+!i122 16
+R4
+Z44 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_section.vhd
+Z45 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_section.vhd
+l0
+L5 1
+VX[`ngS:F>fK@9DOoN8^8z3
+!s100 [YFooEmZl?LIKi^E23BX:0
+R7
+32
+R35
+!i10b 1
+R18
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_section.vhd|
+Z47 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/integrator_section.vhd|
+!i113 1
+R12
+R13
+Aintegrator_section_arch
+R1
+R2
+R3
+DEx4 work 18 integrator_section 0 22 X[`ngS:F>fK@9DOoN8^8z3
+!i122 16
+l41
+L22 68
+VcGLlnI[89aI30_3EC;;?92
+!s100 ^?4k1Z<DgIm]NGeKOTcKY2
+R7
+32
+R35
+!i10b 1
+R18
+R46
+R47
+!i113 1
+R12
+R13
+Ezero_insertion
+Z48 w1670271063
+R1
+R2
+R3
+!i122 17
+R4
+Z49 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/zero_insertion.vhd
+Z50 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/zero_insertion.vhd
+l0
+L6 1
+VbSLDIWDPSK8EA7_5maU3z3
+!s100 Fn[S7n>AliXhaWM3[QAm:3
+R7
+32
+R35
+!i10b 1
+R18
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/zero_insertion.vhd|
+Z52 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter/src/zero_insertion.vhd|
+!i113 1
+R12
+R13
+Azero_insertion_arch
+R1
+R2
+R3
+DEx4 work 14 zero_insertion 0 22 bSLDIWDPSK8EA7_5maU3z3
+!i122 17
+l23
+L21 7
+Vcf@4Vg;:N^MVm1OW?W^Pb2
+!s100 3H^oW1Gc86TTP6X52GGie0
+R7
+32
+R35
+!i10b 1
+R18
+R51
+R52
+!i113 1
+R12
+R13

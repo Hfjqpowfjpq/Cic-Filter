@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec 11 11:43:57 2022
+# Process ID: 3304
+# Current directory: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/synth_1
+# Command line: vivado.exe -log cic_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cic_wrapper.tcl
+# Log file: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/synth_1/cic_wrapper.vds
+# Journal file: C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cic_wrapper.tcl -notrace
+Command: synth_design -top cic_wrapper -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15392
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cic_wrapper' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic_wrapper.vhd:20]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_0_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic_wrapper.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop' (1#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'cic' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic.vhd:5' bound to instance 'cic_map' of component 'cic' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic_wrapper.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'cic' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic.vhd:22]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'comb_section' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:5' bound to instance 'comb_section_map' of component 'comb_section' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'comb_section' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:22]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'comb_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:5' bound to instance 'comb_block_0_map' of component 'comb_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'comb_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 16 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'comb_block' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'comb_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:5' bound to instance 'comb_block_1_map' of component 'comb_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'comb_block__parameterized1' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 17 - type: integer 
+	Parameter Nbit bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized2' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized2' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'comb_block__parameterized1' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'comb_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:5' bound to instance 'comb_block_2_map' of component 'comb_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'comb_block__parameterized3' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 18 - type: integer 
+	Parameter Nbit bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized4' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized4' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'comb_block__parameterized3' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'comb_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:5' bound to instance 'comb_block_3_map' of component 'comb_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'comb_block__parameterized5' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+	Parameter Nbit bound to: 19 - type: integer 
+	Parameter Nbit bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized6' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 19 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized6' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'comb_block__parameterized5' (2#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_block.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'comb_section' (3#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/comb_section.vhd:22]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'zero_insertion' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/zero_insertion.vhd:6' bound to instance 'zero_insertion_map' of component 'zero_insertion' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'zero_insertion' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/zero_insertion.vhd:21]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'zero_insertion' (4#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/zero_insertion.vhd:21]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'integrator_section' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:5' bound to instance 'integrator_section_map' of component 'integrator_section' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'integrator_section' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:22]
+	Parameter Nstages bound to: 4 - type: integer 
+	Parameter Rfactor bound to: 4 - type: integer 
+	Parameter Nbit bound to: 16 - type: integer 
+	Parameter Nbit bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'integrator_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:5' bound to instance 'integrator_block_map_0' of component 'integrator_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'integrator_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 19 - type: integer 
+	Parameter Nbit bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized8' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized8' (4#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'integrator_block' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'integrator_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:5' bound to instance 'integrator_block_map_1' of component 'integrator_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'integrator_block__parameterized1' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 20 - type: integer 
+	Parameter Nbit bound to: 21 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized10' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 21 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized10' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'integrator_block__parameterized1' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 21 - type: integer 
+INFO: [Synth 8-3491] module 'integrator_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:5' bound to instance 'integrator_block_map_2' of component 'integrator_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'integrator_block__parameterized3' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 21 - type: integer 
+	Parameter Nbit bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized12' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized12' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'integrator_block__parameterized3' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'integrator_block' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:5' bound to instance 'integrator_block_map_3' of component 'integrator_block' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'integrator_block__parameterized5' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+	Parameter Nbit bound to: 22 - type: integer 
+	Parameter Nbit bound to: 23 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'flipflop__parameterized14' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+	Parameter Nbit bound to: 23 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflop__parameterized14' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'integrator_block__parameterized5' (5#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_block.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'integrator_section' (6#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/integrator_section.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'cic' (7#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic.vhd:22]
+	Parameter Nbit bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/flipflop.vhd:6' bound to instance 'flipflop_1_map' of component 'flipflop' [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic_wrapper.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'cic_wrapper' (8#1) [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/src/cic_wrapper.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 998.555 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.srcs/constrs_1/new/cic_wrapper_costraint.xdc]
+Finished Parsing XDC File [C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.srcs/constrs_1/new/cic_wrapper_costraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 998.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 1     
+	   3 Input   20 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   3 Input   19 Bit       Adders := 1     
+	   3 Input   18 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:28 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:28 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:28 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:29 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:29 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:29 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    56|
+|2     |LUT1   |     5|
+|3     |LUT2   |   137|
+|4     |LUT3   |    40|
+|5     |LUT4   |     4|
+|6     |LUT5   |     5|
+|7     |LUT6   |    31|
+|8     |FDRE   |   204|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:29 . Memory (MB): peak = 998.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:22 . Memory (MB): peak = 998.555 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:29 . Memory (MB): peak = 998.555 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 998.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 998.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:51 . Memory (MB): peak = 998.871 ; gain = 0.316
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Cic_Filter_Wrapper/vivado/cic_wrapper_testbench/cic_wrapper_testbench.runs/synth_1/cic_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cic_wrapper_utilization_synth.rpt -pb cic_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 11:45:58 2022...

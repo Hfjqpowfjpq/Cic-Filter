@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1670586915">
+  <File Type="BITSTR-BMM" Name="cic_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="cic_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="cic_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="cic_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="cic.tcl"/>
+  <File Type="OPT-TIMING" Name="cic_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="cic_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="cic_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="cic_reports.tcl"/>
+  <File Type="OPT-DRC" Name="cic_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="cic.hwdef"/>
+  <File Type="PWROPT-DCP" Name="cic_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="cic_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="cic_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="cic_placed.dcp"/>
+  <File Type="PLACE-IO" Name="cic_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="cic_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="cic_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="cic_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="cic_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="cic_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="cic_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="cic_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="cic_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="cic.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="cic_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="cic_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="cic_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="cic.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="cic_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="cic_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="cic_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="cic_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="cic_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="cic_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="cic_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="cic.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="cic_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="cic_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="cic_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="cic_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="cic_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="cic_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="cic_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="cic_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="cic_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="cic_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="cic_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="cic_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="cic_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="cic_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="cic_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="cic_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="cic_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="cic_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="cic_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="cic_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="cic_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="cic.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="cic_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="cic.rbt"/>
+  <File Type="BITSTR-NKY" Name="cic.nky"/>
+  <File Type="PDI-FILE" Name="cic.pdi"/>
+  <File Type="RCFI_FILE" Name="cic.rcfi"/>
+  <File Type="CFI_FILE" Name="cic.cfi"/>
+  <File Type="RNPI_FILE" Name="cic.rnpi"/>
+  <File Type="NPI_FILE" Name="cic.npi"/>
+  <File Type="RBD_FILE" Name="cic.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="cic.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="cic.sysdef"/>
+  <File Type="BG-BGN" Name="cic.bgn"/>
+  <File Type="BG-DRC" Name="cic.drc"/>
+  <File Type="RDI-RDI" Name="cic.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../src/comb_block.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/comb_section.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/flipflop.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/integrator_block.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/integrator_section.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/zero_insertion.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/cic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cic"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/clk_test.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/clk_test.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

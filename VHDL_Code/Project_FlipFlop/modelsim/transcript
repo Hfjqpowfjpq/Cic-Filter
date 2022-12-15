@@ -1,0 +1,45 @@
+# Compile of flipflop.vhd was successful.
+# Compile of flipfop_tb.vhd failed with 14 errors.
+# 2 compiles, 1 failed with 14 errors.
+# Compile of flipfop_tb.vhd failed with 14 errors.
+# Compile of flipfop_tb.vhd failed with 2 errors.
+# Compile of flipfop_tb.vhd was successful.
+vsim -gui work.flipflop_tb
+# vsim -gui work.flipflop_tb 
+# Start time: 10:03:27 on Dec 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.flipflop_tb(arch)
+# Loading work.flipflop(flipflop_arch)
+add wave -position insertpoint sim:/flipflop_tb/*
+run -all
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 450 ns  Iteration: 0  Instance: /flipflop_tb
+# Compile of flipfop_tb.vhd failed with 2 errors.
+# Compile of flipfop_tb.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.flipflop_tb(arch)
+run -all
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 550 ns  Iteration: 0  Instance: /flipflop_tb
+# Compile of flipfop_tb.vhd failed with 1 errors.
+# Compile of flipflop.vhd was successful.
+# Compile of flipfop_tb.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of flipflop.vhd was successful.
+# Compile of flipfop_tb.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of flipflop.vhd was successful.
+# Compile of flipfop_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.flipflop_tb(arch)
+# Loading work.flipflop(flipflop_arch)
+run -all
+# End time: 10:40:34 on Dec 07,2022, Elapsed time: 0:37:07
+# Errors: 0, Warnings: 1
+# Closing project C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_FlipFlop/modelsim/flipflop_testbench.mpf

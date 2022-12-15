@@ -1,0 +1,10 @@
+# Compile of cic.vhd was successful.
+# Compile of cic_wrapper.vhd failed with 1 errors.
+# Compile of comb_block.vhd was successful.
+# Compile of comb_section.vhd was successful.
+# Compile of flipflop.vhd was successful.
+# Compile of integrator_block.vhd was successful.
+# Compile of integrator_section.vhd was successful.
+# Compile of zero_insertion.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of cic_wrapper.vhd was successful.

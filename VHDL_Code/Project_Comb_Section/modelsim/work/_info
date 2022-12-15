@@ -1,0 +1,183 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Integrator_Block/modelsim
+Ecomb_block
+Z0 w1669727535
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+Z4 dC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/modelsim
+Z5 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_block.vhd
+Z6 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_block.vhd
+l0
+L5 1
+VX@64fKSgmVZ]ehf6hKz5H0
+!s100 ?6LPZi4TijGiO28WhU[cn3
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1670432005
+!i10b 1
+Z9 !s108 1670432005.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_block.vhd|
+Z11 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_block.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acomb_block_arch
+R1
+R2
+R3
+DEx4 work 10 comb_block 0 22 X@64fKSgmVZ]ehf6hKz5H0
+!i122 6
+l40
+L21 38
+VAmV^^G[KLFX<=VUT6l[8V2
+!s100 EkXcQWhQ:IZHfFV[P?m9=3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecomb_section
+Z14 w1670322155
+R1
+R2
+R3
+!i122 7
+R4
+Z15 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_section.vhd
+Z16 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_section.vhd
+l0
+L5 1
+Vmo6MM7L^W6G^F7>AKAaSH2
+!s100 @>^hk1`j0Shl6c:ohJzM=1
+R7
+32
+Z17 !s110 1670432006
+!i10b 1
+Z18 !s108 1670432006.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_section.vhd|
+Z20 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/comb_section.vhd|
+!i113 1
+R12
+R13
+Acomb_section_arch
+R1
+R2
+R3
+DEx4 work 12 comb_section 0 22 mo6MM7L^W6G^F7>AKAaSH2
+!i122 7
+l45
+L22 77
+VKjTJEdb5Ejm;@Yc^n=MbU2
+!s100 `Fz=[7?J7C6d>o1UVIiB`0
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ecomb_section_tb
+Z21 w1670435421
+R1
+R2
+R3
+!i122 10
+R4
+Z22 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/tb/comb_section_tb.vhd
+Z23 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/tb/comb_section_tb.vhd
+l0
+L6 1
+VB[k@4F_Z4iR?FK3TDYQz62
+!s100 24DK3OAkg9icg51G<7;f92
+R7
+32
+Z24 !s110 1670435451
+!i10b 1
+Z25 !s108 1670435451.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/tb/comb_section_tb.vhd|
+Z27 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/tb/comb_section_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+Z28 DEx4 work 15 comb_section_tb 0 22 B[k@4F_Z4iR?FK3TDYQz62
+!i122 10
+l40
+Z29 L9 67
+V2=MJ:ZDXoeM1[k_UYVg_U3
+!s100 6VB;C<k]m@ekNYLF`L?<A2
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Eflipflop
+Z30 w1669664723
+R1
+R2
+R3
+!i122 8
+R4
+Z31 8C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/flipflop.vhd
+Z32 FC:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/flipflop.vhd
+l0
+L6 1
+VmAL2kRoWDTC^SdKf2SFHF0
+!s100 6ROTEUKcWdW;[9PCl__Y61
+R7
+32
+R17
+!i10b 1
+R18
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/flipflop.vhd|
+Z34 !s107 C:/Users/marru/Documents/Magistrale/EACS/Electronics/Project/VHDL_Code/Project_Comb_Section/src/flipflop.vhd|
+!i113 1
+R12
+R13
+Aflipflop_arch
+R1
+R2
+R3
+DEx4 work 8 flipflop 0 22 mAL2kRoWDTC^SdKf2SFHF0
+!i122 8
+l23
+L21 17
+VY:OjEl5VYIl:OnZMgHU^F1
+!s100 >DVXXal[flT0V?0YdDUD<1
+R7
+32
+R17
+!i10b 1
+R18
+R33
+R34
+!i113 1
+R12
+R13
